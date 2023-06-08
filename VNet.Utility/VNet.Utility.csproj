@@ -14,11 +14,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\VNet.Testing\VNet.Testing\VNet.Testing.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="VNet.Testing">
-      <HintPath>..\..\Shared Libraries\VNet.Testing.dll</HintPath>
-    </Reference>
-  </ItemGroup>
   <Target Name="CopyToSharedLibraries" AfterTargets="AfterBuild">
     <Copy SourceFiles="$(OutputPath)\VNet.Utility.dll" DestinationFolder="D:\My Code\Shared Libraries\" ContinueOnError="true" />
   </Target>

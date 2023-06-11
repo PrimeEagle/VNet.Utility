@@ -1,10 +1,9 @@
-﻿using Microsoft.CodeAnalysis.CSharp;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Reflection;
 using System.Reflection.Emit;
-
+using Microsoft.CodeAnalysis.CSharp;
 
 namespace VNet.Utility
 {

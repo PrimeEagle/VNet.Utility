@@ -2,11 +2,6 @@ name: Build NuGet
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - 'version.json'
 
 jobs:
   check-version-change:

@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31702.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.Utility", "VNet.Utility\VNet.Utility.csproj", "{136482BA-15B6-41C5-A321-C45140B8018B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VNet.Utility.Tests", "VNet.Utility.Tests\VNet.Utility.Tests.csproj", "{807F35EB-CB2F-4CA8-B0AB-0AB2C4BD00D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.Utility.Tests", "VNet.Utility.Tests\VNet.Utility.Tests.csproj", "{807F35EB-CB2F-4CA8-B0AB-0AB2C4BD00D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".version", ".version", "{F1A88B3B-75E1-4096-A675-415C28A995D2}"
+	ProjectSection(SolutionItems) = preProject
+		.version\version.json = .version\version.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using global::System.Diagnostics.CodeAnalysis;
 using System.Security.Cryptography;
 
 namespace VNet.Utility.Crypto
@@ -26,7 +26,7 @@ namespace VNet.Utility.Crypto
             }
         }
 
-        public System.Security.Cryptography.CspProviderFlags Flags
+        public global::System.Security.Cryptography.CspProviderFlags Flags
         {
             get
             {

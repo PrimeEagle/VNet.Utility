@@ -74,7 +74,7 @@ namespace VNet.Utility.Crypto
             return doc.InnerXml;
         }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2001:AvoidCallingProblematicMethods", MessageId = "System.GC.Collect")]
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2001:AvoidCallingProblematicMethods", MessageId = "System.GC.Collect")]
         public AsymmetricKeyInfo ClonePublicKey()
         {
             AsymmetricKeyInfo publicKey = new AsymmetricKeyInfo();

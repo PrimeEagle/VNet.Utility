@@ -25,7 +25,7 @@ namespace VNet.Utility.Extensions
                 throw new ArgumentNullException();
 
             var chars = new char[array.Length / sizeof(char)];
-            System.Buffer.BlockCopy(array, 0, chars, 0, array.Length);
+            global::System.Buffer.BlockCopy(array, 0, chars, 0, array.Length);
             return new string(chars);
         }
     }

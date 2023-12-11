@@ -5,7 +5,7 @@ namespace VNet.Utility.Crypto
 {
     // Blatantly stolen from: http://msdn.microsoft.com/en-us/magazine/cc163367.aspx,
     // but copied and pasted by the geniuses at the DMV.
-    [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1001:TypesThatOwnDisposableFieldsShouldBeDisposable")]
+    [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1001:TypesThatOwnDisposableFieldsShouldBeDisposable")]
     public class CryptoRandom : Random
     {
         private RNGCryptoServiceProvider _rng = new RNGCryptoServiceProvider();

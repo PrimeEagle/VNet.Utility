@@ -1,5 +1,5 @@
 ﻿using System;
-using System.IO;
+using global::System.IO;
 using System.Security;
 using System.Security.Cryptography;
 using VNet.Utility.Extensions;
@@ -17,7 +17,7 @@ namespace VNet.Utility.Crypto
         /// <param name="plaintext">The text to encrypt.</param>
         /// <param name="cipherKey">A password used to generate a key for encryption.</param>
         /// <param name="salt">A random salt, encoded as a Base64 string.</param>
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1804:RemoveUnusedLocals", MessageId = "plainSalt"), System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1804:RemoveUnusedLocals", MessageId = "plainCipher"), System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2202:Do not dispose objects multiple times")]
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1804:RemoveUnusedLocals", MessageId = "plainSalt"), global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1804:RemoveUnusedLocals", MessageId = "plainCipher"), global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2202:Do not dispose objects multiple times")]
         public static string EncryptString(SecureString plaintext, SecureString cipherKey, SecureString salt)
         {
             if (plaintext == null)
@@ -78,7 +78,7 @@ namespace VNet.Utility.Crypto
         /// <param name="cipherText">The text to decrypt.</param>
         /// <param name="cipherKey">A password used to generate a key for decryption.</param>
         /// <param name="salt">A random salt, encoded as a Base64 string.</param>
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2202:Do not dispose objects multiple times")]
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2202:Do not dispose objects multiple times")]
         public static SecureString DecryptString(string cipherText, SecureString cipherKey, SecureString salt)
         {
             if (string.IsNullOrEmpty(cipherText))

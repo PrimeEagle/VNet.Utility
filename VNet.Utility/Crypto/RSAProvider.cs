@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
+using global::System.Diagnostics.CodeAnalysis;
 using System.Security.Cryptography;
 
 namespace VNet.Utility.Crypto

@@ -53,7 +53,7 @@ namespace VNet.Utility.Extensions
             var s = sb.ToString();
             var bytes = new byte[s.Length / 2];
             for (var i = 0; i < s.Length; i += 2)
-                bytes[i / 2] = byte.Parse(s.Substring(i, 2), System.Globalization.NumberStyles.HexNumber, CultureInfo.InvariantCulture);
+                bytes[i / 2] = byte.Parse(s.Substring(i, 2), global::System.Globalization.NumberStyles.HexNumber, CultureInfo.InvariantCulture);
 
             return bytes;
         }
@@ -64,7 +64,7 @@ namespace VNet.Utility.Extensions
                 throw new ArgumentNullException();
 
             var bytes = new byte[value.Length * sizeof(char)];
-            System.Buffer.BlockCopy(value.ToCharArray(), 0, bytes, 0, bytes.Length);
+            global::System.Buffer.BlockCopy(value.ToCharArray(), 0, bytes, 0, bytes.Length);
             return bytes;
         }
 

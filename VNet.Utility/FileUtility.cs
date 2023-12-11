@@ -1,5 +1,5 @@
 ﻿using System;
-using System.IO;
+using global::System.IO;
 using System.Security.Cryptography;
 
 namespace VNet.Utility
@@ -9,11 +9,11 @@ namespace VNet.Utility
         // Adapted and modified from: http://www.codeproject.com/Articles/22736/Securely-Delete-a-File-using-NET
         public static void WipeFile(string fileName, int timesToWrite)
         {
-            if (System.IO.File.Exists(fileName))
+            if (global::System.IO.File.Exists(fileName))
             {
                 // Set the files attributes to normal in case it's read-only.
 
-                System.IO.File.SetAttributes(fileName, FileAttributes.Normal);
+                global::System.IO.File.SetAttributes(fileName, FileAttributes.Normal);
 
                 // Calculate the total number of sectors in the file.
                 double sectors = Math.Ceiling(new FileInfo(fileName).Length / 512.0);
@@ -69,13 +69,13 @@ namespace VNet.Utility
                                            random.Next(0, 59),
                                            random.Next(0, 59));
 
-                System.IO.File.SetCreationTime(fileName, dt);
-                System.IO.File.SetLastAccessTime(fileName, dt);
-                System.IO.File.SetLastWriteTime(fileName, dt);
+                global::System.IO.File.SetCreationTime(fileName, dt);
+                global::System.IO.File.SetLastAccessTime(fileName, dt);
+                global::System.IO.File.SetLastWriteTime(fileName, dt);
 
                 // Finally, delete the file
 
-                System.IO.File.Delete(fileName);
+                global::System.IO.File.Delete(fileName);
             }
         }
     }

@@ -10,9 +10,7 @@
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.7.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="System.Security.AccessControl" Version="6.0.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\VNet.Testing\VNet.Testing\VNet.Testing.csproj" />
+    <PackageReference Include="VNet.Testing" Version="1.0.1" />
   </ItemGroup>
   <Target Name="CopyToSharedLibraries" AfterTargets="AfterBuild">
     <Copy SourceFiles="$(OutputPath)\VNet.Utility.dll" DestinationFolder="D:\My Code\Shared Libraries\" ContinueOnError="true" />

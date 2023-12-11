@@ -100,7 +100,7 @@ namespace VNet.Utility.Crypto
             return exists;
         }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2001:AvoidCallingProblematicMethods", MessageId = "System.GC.Collect")]
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Reliability", "CA2001:AvoidCallingProblematicMethods", MessageId = "System.GC.Collect")]
         public static void DeleteKeyFromContainer(IRSAProvider provider, string containerName)
         {
             if (provider == null)

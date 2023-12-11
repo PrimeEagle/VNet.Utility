@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+﻿using global::System.Diagnostics;
 
 namespace VNet.Utility
 {

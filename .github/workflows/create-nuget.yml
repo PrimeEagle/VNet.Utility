@@ -3,6 +3,10 @@ name: Build NuGet
 on:
   workflow_dispatch:
 
+concurrency: 
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   check-version-change:
     runs-on: windows-latest

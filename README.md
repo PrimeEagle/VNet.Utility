@@ -4,6 +4,8 @@
 ![Build NuGet](https://github.com/PrimeEagle/VNet.System/actions/workflows/create-nuget.yml/badge.svg) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Static Badge](https://img.shields.io/badge/NuGet_Package-v1.0.1-blue)<br>
 ![GitHub License](https://img.shields.io/github/license/PrimeEagle/VNet.Utility)
 
-<img src="https://github.com/PrimeEagle/VNet.Utility/blob/main/vnet.utility.png?raw=true" width="250" />
+<img src="https://github.com/PrimeEagle/VNet.Utility/blob/main/.img/logo.png?raw=true" width="250" />
 
-Utility functions used in other class libraries.
+Class library of general utility functions and extension methods.
+
+This is a standalone class library, but is also available as part of the full [VNet](https://github.com/PrimeEagle/VNet) library.
